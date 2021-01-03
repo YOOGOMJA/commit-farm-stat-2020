@@ -6,16 +6,7 @@ interface LogoProps {
 }
 
 const Logo = ({ className }: LogoProps) => {
-  return (
-    <div
-      style={{
-        backgroundImage: `url('${logo}')`,
-        backgroundPosition: 'center center',
-        backgroundRepeat: 'no-repeat'
-      }}
-      className={className}
-    ></div>
-  );
+  return <img src={logo} className={className} alt="로고"/>;
 };
 
 export default Logo;

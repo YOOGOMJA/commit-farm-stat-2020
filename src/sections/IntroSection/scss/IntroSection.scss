@@ -1,0 +1,62 @@
+@import '../../../scss/variables';
+@import '../../../scss/mixins';
+
+$prefix: 'intro-section';
+
+.#{$prefix}-container {
+  scroll-snap-align: start;
+  height: 100%;
+  @include flex-stretch(column);
+  flex: 0 0 100%;
+  overflow: hidden;
+  position: relative;
+
+  .#{$prefix}-logo {
+    width: 300px;
+    top: 8vh;
+    left: -5em;
+    position: absolute;
+  }
+
+  .#{$prefix}-wrapper {
+    @include flex(column, space-between, flex-end);
+  }
+}
+
+.#{$prefix}-wrapper {
+  margin-top: auto;
+  margin-bottom: 30vh;
+  margin-right: 1em;
+  position: relative;
+  .#{$prefix}-title-year {
+    font-size: 9em;
+    font-weight: 900;
+    color: $color-variant-primary;
+    position: absolute;
+    top: -0.75em;
+    right: -0.25em;
+    z-index: 0;
+  }
+  h1 {
+    z-index: 1;
+    color: $color-text-primary;
+    font-size: 30px;
+    text-align: right;
+    font-weight: 200;
+    line-height: 35px;
+    b {
+      color: $color-primary;
+    }
+  }
+  hr {
+    display: flex;
+    margin: 1.5em 0 1.5em auto;
+    width: 60%;
+  }
+  p {
+    text-align: right;
+    font-size: 14px;
+    color: $color-text-secondary;
+    font-weight: 400;
+  }
+}

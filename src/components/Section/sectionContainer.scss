@@ -1,0 +1,30 @@
+@import '../../scss/mixins';
+@import '../../scss/variables';
+
+$prefix: $global-prefix + '_section';
+
+.#{$prefix} {
+  @include flex-stretch(column);
+  flex: 1 0 100%;
+  width: 100%;
+  height: 100%;
+  .#{$prefix}-header {
+    margin: 5vh 1.25em 0 1.25em;
+    a {
+      margin-left: 1em;
+      font-size: 18px;
+      text-decoration: none;
+      color: $color-text-secondary;
+      &:visited {
+        color: $color-text-secondary;
+      }
+      &:active {
+        color: $color-text-secondary;
+      }
+    }
+  }
+  .#{$prefix}-wrapper {
+    margin: 5vh 1.25em 5vh 1.25em;
+    @include flex-stretch(column);
+  }
+}

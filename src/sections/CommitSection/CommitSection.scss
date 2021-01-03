@@ -1,0 +1,18 @@
+@import '../../scss/mixins';
+@import '../../scss/variables';
+
+$prefix: 'commit-section';
+
+.#{$prefix}-container {
+  height: auto;
+  flex-basis: auto;
+  margin-bottom: 1.5em;
+  .#{$prefix}-wrapper {
+    .#{$prefix}-cards {
+      @include flex(column, stretch, space-between);
+      .#{$prefix}-card {
+        margin-bottom: 1.5em;
+      }
+    }
+  }
+}

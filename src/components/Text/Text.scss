@@ -1,0 +1,36 @@
+@import '../../scss/variables';
+
+$prefix: 'text';
+
+@mixin text-color($size) {
+  &-primary {
+    color: $color-primary;
+    font-size: $size;
+  }
+  &-secondary {
+    color: $color-secondary;
+    font-size: $size;
+  }
+  &-default {
+    color: $color-text-primary;
+    font-size: $size;
+  }
+  &-disabled {
+    color: $color-text-secondary;
+    font-size: $size;
+  }
+}
+
+.#{$global-prefix}_#{$prefix} {
+  margin: 0;
+  display: flex;
+  align-items: center;
+
+  &-p {
+    @include text-color(14px);
+  }
+
+  &-h {
+    @include text-color(23px);
+  }
+}

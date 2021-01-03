@@ -1,0 +1,64 @@
+@import '../../scss/mixins';
+@import '../../scss/variables';
+
+$prefix: 'footer-section';
+
+.#{$prefix}-container {
+  scroll-snap-align: end;
+  @include flex-stretch(column);
+  flex: 0 0 auto;
+  background-color: #292929;
+  margin-top: 5em;
+  width: 100%;
+  height: max-content;
+
+  .#{$prefix}-wrapper {
+    background-color: #292929;
+    margin: 4em 2em 1em 2em;
+    height: auto;
+    @include flex-stretch(column);
+  }
+}
+
+.#{$prefix}-wrapper {
+  .#{$prefix}-logo {
+    width: 200px;
+    margin-bottom: 2em;
+  }
+  .#{$prefix}-rows {
+    margin: 1em 0;
+    a {
+      text-decoration: none;
+      color: $color-text-secondary;
+      &:visited {
+        color: $color-text-secondary;
+      }
+      &:active {
+        color: $color-text-secondary;
+      }
+    }
+    &.icons {
+      display: flex;
+      p {
+        margin-right: 0.5em;
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+.#{$prefix}-license {
+  margin-left: 3em;
+  a {
+    text-decoration: none;
+    color: $color-text-secondary;
+    &:visited {
+      color: $color-text-secondary;
+    }
+    &:active {
+      color: $color-text-secondary;
+    }
+  }
+  font-size: 10px;
+  margin-bottom: 8em;
+}

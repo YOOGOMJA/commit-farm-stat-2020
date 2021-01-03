@@ -1,0 +1,12 @@
+@import '../../scss/mixins';
+@import '../../scss/variables';
+
+$prefix: 'summary-section';
+
+.#{$prefix}-wrapper {
+  height: 100%;
+  .#{$prefix}-cards {
+    @include flex(column, stretch, space-between);
+    height: 100%;
+  }
+}

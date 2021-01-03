@@ -1,0 +1,38 @@
+@import '../../scss/mixins';
+@import '../../scss/variables';
+
+$prefix: 'language-section';
+
+.#{$prefix}-container {
+  height: auto;
+  flex-basis: auto;
+  .#{$prefix}-wrapper {
+    height: auto;
+  }
+  margin-bottom: 1.5em;
+}
+
+.#{$prefix}-charts {
+  height: auto;
+  @include flex(column, space-between, stretch);
+
+  .#{$prefix}-row {
+    margin: 0.5em 0;
+    @include flex-stretch(column);
+    .#{$prefix}-bar-label {
+      margin-bottom: 0.25em;
+    }
+  }
+}
+
+.#{$prefix}-charts .#{$prefix}-bar-container {
+  @include flex(row, center, flex-start);
+  height: 20px;
+  position: relative;
+
+  .#{$prefix}-bar {
+    background-color: $color-primary;
+    margin-right: 0.5em;
+    border-radius: 3px;
+  }
+}
