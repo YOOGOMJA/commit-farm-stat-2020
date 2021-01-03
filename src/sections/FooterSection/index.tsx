@@ -45,7 +45,7 @@ const FooterSection = () => {
         <div className={`${PREFIX}-rows icons`}>
           <Text theme="disabled">
             <a
-              href="https://sites.google.com/view/dscsahmyook"
+              href="https://github.com/YOOGOMJA/commit-farm-stat-2020"
               target="_blank"
               rel="noreferrer"
             >
